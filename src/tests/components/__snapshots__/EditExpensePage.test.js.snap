@@ -8,7 +8,7 @@ exports[`should render EditExpensePage 1`] = `
         "amount": 5600,
         "createdAt": 345600000,
         "description": "Credit ccard",
-        "id": 3,
+        "id": "3",
         "note": "",
       }
     }

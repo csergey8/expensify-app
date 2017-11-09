@@ -128,7 +128,7 @@ test('should add expense to database and store', (done) => {
         }
       });
   
-      return database.ref(`users/${uid}/expenses/${actions[0].expense.id}`).once('value');
+      return database.ref(`users/${uid}/'expenses/${actions[0].expense.id}`).once('value');
     }).then((snapshot) => {
       expect(snapshot.val()).toEqual(expenseDefaults);
       done();

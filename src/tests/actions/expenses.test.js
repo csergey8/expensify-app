@@ -128,12 +128,12 @@ test('should add expense to database and store', (done) => {
         }
       });
   
-      return database.ref(`users/${uid}/'expenses/${actions[0].expense.id}`).once('value');
+      return database.ref(`users/${uid}/expenses/${actions[0].expense.id}`).once('value');
     }).then((snapshot) => {
       expect(snapshot.val()).toEqual(expenseDefaults);
       done();
     });
-  }, 0);
+  });
 
   test('should setup set expense action object with data', () => {
     const action = setExpenses(expenses);

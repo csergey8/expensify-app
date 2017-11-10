@@ -23,30 +23,34 @@ exports[`should render Expense List with expenses 1`] = `
       Amount
     </div>
   </div>
-  <ExpenseListItem
-    amount={195}
-    createdAt={0}
-    description="Gum"
-    id="1"
-    key="1"
-    note=""
-  />
-  <ExpenseListItem
-    amount={14252}
-    createdAt={-345600000}
-    description="Rent"
-    id="2"
-    key="2"
-    note=""
-  />
-  <ExpenseListItem
-    amount={5600}
-    createdAt={345600000}
-    description="Credit ccard"
-    id="3"
-    key="3"
-    note=""
-  />
+  <div
+    className="list-body"
+  >
+    <ExpenseListItem
+      amount={195}
+      createdAt={0}
+      description="Gum"
+      id="1"
+      key="1"
+      note=""
+    />
+    <ExpenseListItem
+      amount={14252}
+      createdAt={-345600000}
+      description="Rent"
+      id="2"
+      key="2"
+      note=""
+    />
+    <ExpenseListItem
+      amount={5600}
+      createdAt={345600000}
+      description="Credit ccard"
+      id="3"
+      key="3"
+      note=""
+    />
+  </div>
 </div>
 `;
 
@@ -74,11 +78,15 @@ exports[`should render ExpenseList with empty message 1`] = `
     </div>
   </div>
   <div
-    className="list-item list-item--message"
+    className="list-body"
   >
-    <span>
-      No Expenses
-    </span>
+    <div
+      className="list-item list-item--message"
+    >
+      <span>
+        No Expenses
+      </span>
+    </div>
   </div>
 </div>
 `;

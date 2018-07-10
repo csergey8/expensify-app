@@ -1,15 +1,18 @@
 import * as firebase from 'firebase';
 import moment from 'moment';
 
-const config = {
-    apiKey: 'AIzaSyAf8pybxykJQKpH0VUOKdtUqSvLZQu4P0E',
-    authDomain: 'expesify.firebaseapp.com/',
-    databaseURL: 'https://expesify.firebaseio.com/',
-    projectId: 'expesify'
-  };
+
+//  const config = {
+//     apiKey: 'AIzaSyAf8pybxykJQKpH0VUOKdtUqSvLZQu4P0E',
+//     authDomain: 'expesify.firebaseapp.com/',
+//     databaseURL: 'https://expesify.firebaseio.com/',
+//     projectId: 'expesify'
+//   };
 
 
-/*
+
+
+
 
 const config = {
     apiKey: process.env.FIREBASE_API_KEY,
@@ -20,7 +23,7 @@ const config = {
     messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID
   };
 
-  */
+  
   firebase.initializeApp(config);
 
   const database = firebase.database();
